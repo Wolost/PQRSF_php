@@ -1,0 +1,5 @@
+
+Runner.buttonEvents["notifications"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='notifications';if(!pageObj.buttonEventBefore['notifications']){pageObj.buttonEventBefore['notifications']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;params["txt"]="Hello";ajax.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['notifications']){pageObj.buttonEventAfter['notifications']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;var message=result["txt"]+" !!!";ajax.setMessage(message);}}
+$('a[id="notifications"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="notifications"+"_"+Runner.genId();var button_notifications=new Runner.form.Button({id:this.id,btnName:"notifications"});button_notifications.init({args:[pageObj,proxy,pageid]});});};

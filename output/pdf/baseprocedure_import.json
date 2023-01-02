@@ -1,0 +1,168 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel baseprocedure import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":{$pqrsfId_pdfvalue},"hidden":"{$item_hide_import_field}"},
+				
+				
+			{"text":{$nuv_pdfvalue},"hidden":"{$item_hide_import_field1}"},
+				
+				
+			{"text":{$entryDate_pdfvalue},"hidden":"{$item_hide_import_field2}"},
+				
+				
+			{"text":{$expirationDate_pdfvalue},"hidden":"{$item_hide_import_field3}"},
+				
+				
+			{"text":{$type_pdfvalue},"hidden":"{$item_hide_import_field4}"},
+				
+				
+			{"text":{$subject_pdfvalue},"hidden":"{$item_hide_import_field5}"},
+				
+				
+			{"text":{$name_pdfvalue},"hidden":"{$item_hide_import_field6}"},
+				
+				
+			{"text":{$isDisabled_pdfvalue},"hidden":"{$item_hide_import_field7}"},
+				
+				
+			{"text":{$replyDate_pdfvalue},"hidden":"{$item_hide_import_field8}"},
+				
+				
+			{"text":{$requestingIds_pdfvalue},"hidden":"{$item_hide_import_field9}"},
+				
+				
+			{"text":{$documentId_pdfvalue},"hidden":"{$item_hide_import_field10}"},
+				
+				
+			{"text":{$respondeDocumentId_pdfvalue},"hidden":"{$item_hide_import_field11}"},
+				
+				
+			{"text":{$trackingIds_pdfvalue},"hidden":"{$item_hide_import_field12}"},
+				
+				
+			{"text":{$responseId_pdfvalue},"hidden":"{$item_hide_import_field13}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+};
+
+pdfFonts = {$pdfFonts};
+  

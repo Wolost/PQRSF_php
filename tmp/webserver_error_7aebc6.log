@@ -1,0 +1,14 @@
+[Thu Dec 29 12:27:42.585224 2022] [core:warn] [pid 8320:tid 524] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/W/Desktop/\xe2\x80\x8e      \xe2\x80\x8f\xe2\x80\x8f\xe2\x80\x8e/PHP/PQRSF/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::bd39:9a88:9176:eca. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 29 12:27:43.706763 2022] [mpm_winnt:notice] [pid 8320:tid 524] AH00455: Apache/2.4.41 (Win64) PHP/7.1.33 configured -- resuming normal operations
+[Thu Dec 29 12:27:43.706763 2022] [mpm_winnt:notice] [pid 8320:tid 524] AH00456: Apache Lounge VC14 Server built: Aug 12 2019 10:48:01
+[Thu Dec 29 12:27:43.706763 2022] [core:notice] [pid 8320:tid 524] AH00094: Command line: 'C:\\Program Files\\PHPRunner10.8\\EmbeddedServer64\\bin\\httpd.exe -d C:/Program Files/PHPRunner10.8/EmbeddedServer64 -d C:\\Program Files\\PHPRunner10.8\\EmbeddedServer64 -f C:\\Users\\W\\Desktop\\\xe2\x80\x8e      \xe2\x80\x8f\xe2\x80\x8f\xe2\x80\x8e\\PHP\\PQRSF\\tmp\\webserver.conf'
+[Thu Dec 29 12:27:43.709756 2022] [mpm_winnt:notice] [pid 8320:tid 524] AH00418: Parent: Created child process 15936
+[Thu Dec 29 12:27:43.931668 2022] [core:warn] [pid 15936:tid 548] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/W/Desktop/\xe2\x80\x8e      \xe2\x80\x8f\xe2\x80\x8f\xe2\x80\x8e/PHP/PQRSF/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::bd39:9a88:9176:eca. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 29 12:27:44.828699 2022] [core:warn] [pid 15936:tid 548] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/W/Desktop/\xe2\x80\x8e      \xe2\x80\x8f\xe2\x80\x8f\xe2\x80\x8e/PHP/PQRSF/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::bd39:9a88:9176:eca. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 29 12:27:45.734785 2022] [mpm_winnt:notice] [pid 15936:tid 548] AH00354: Child: Starting 64 worker threads.
+[Thu Dec 29 15:46:54.710817 2022] [mpm_winnt:notice] [pid 8320:tid 524] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Dec 29 15:46:56.713067 2022] [mpm_winnt:notice] [pid 15936:tid 548] AH00364: Child: All worker threads have exited.
+[Thu Dec 29 15:46:56.739994 2022] [mpm_winnt:notice] [pid 8320:tid 524] AH00430: Parent: Child process 15936 exited successfully.

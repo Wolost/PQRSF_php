@@ -1,0 +1,482 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel baseprocedure edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="baseprocedure_view.php?{$editlink}" {$view_page_button_attrs}>Ver</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN pqrsfId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pqrsfId}  r-vertical-field" 
+	data-signal-error-for="pqrsfId{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="pqrsfId" data-fieldname="pqrsfId" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_pqrsfId}">
+		{BEGIN pqrsfId_label}{$label baseprocedure pqrsfId }{END pqrsfId_label}
+	</label>
+	<div class="r-edit-field">
+		{$pqrsfId_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pqrsfId" {$tooltipAttr baseprocedure pqrsfId } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure pqrsfId }		</div>
+	</div>
+</div>
+
+
+{END pqrsfId_fieldblock}
+											
+{BEGIN nuv_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nuv}  r-vertical-field" 
+	data-signal-error-for="nuv{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="nuv" data-fieldname="nuv" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nuv}">
+		{BEGIN nuv_label}{$label baseprocedure nuv }{END nuv_label}
+	</label>
+	<div class="r-edit-field">
+		{$nuv_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nuv" {$tooltipAttr baseprocedure nuv } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure nuv }		</div>
+	</div>
+</div>
+
+
+{END nuv_fieldblock}
+											
+{BEGIN entryDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entryDate}  r-vertical-field" 
+	data-signal-error-for="entryDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="entryDate" data-fieldname="entryDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entryDate}">
+		{BEGIN entryDate_label}{$label baseprocedure entryDate }{END entryDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$entryDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entryDate" {$tooltipAttr baseprocedure entryDate } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure entryDate }		</div>
+	</div>
+</div>
+
+
+{END entryDate_fieldblock}
+											
+{BEGIN expirationDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_expirationDate}  r-vertical-field" 
+	data-signal-error-for="expirationDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="expirationDate" data-fieldname="expirationDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_expirationDate}">
+		{BEGIN expirationDate_label}{$label baseprocedure expirationDate }{END expirationDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$expirationDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="expirationDate" {$tooltipAttr baseprocedure expirationDate } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure expirationDate }		</div>
+	</div>
+</div>
+
+
+{END expirationDate_fieldblock}
+											
+{BEGIN type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_type}  r-vertical-field" 
+	data-signal-error-for="type{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="type" data-fieldname="type" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_type}">
+		{BEGIN type_label}{$label baseprocedure type }{END type_label}
+	</label>
+	<div class="r-edit-field">
+		{$type_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="type" {$tooltipAttr baseprocedure type } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure type }		</div>
+	</div>
+</div>
+
+
+{END type_fieldblock}
+											
+{BEGIN subject_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subject}  r-vertical-field" 
+	data-signal-error-for="subject{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="subject" data-fieldname="subject" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_subject}">
+		{BEGIN subject_label}{$label baseprocedure subject }{END subject_label}
+	</label>
+	<div class="r-edit-field">
+		{$subject_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="subject" {$tooltipAttr baseprocedure subject } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure subject }		</div>
+	</div>
+</div>
+
+
+{END subject_fieldblock}
+											
+{BEGIN name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_name}  r-vertical-field" 
+	data-signal-error-for="name{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="name" data-fieldname="name" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_name}">
+		{BEGIN name_label}{$label baseprocedure name }{END name_label}
+	</label>
+	<div class="r-edit-field">
+		{$name_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="name" {$tooltipAttr baseprocedure name } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure name }		</div>
+	</div>
+</div>
+
+
+{END name_fieldblock}
+											
+{BEGIN isDisabled_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_isDisabled}  r-vertical-field" 
+	data-signal-error-for="isDisabled{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="isDisabled" data-fieldname="isDisabled" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_isDisabled}">
+		{BEGIN isDisabled_label}{$label baseprocedure isDisabled }{END isDisabled_label}
+	</label>
+	<div class="r-edit-field">
+		{$isDisabled_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="isDisabled" {$tooltipAttr baseprocedure isDisabled } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure isDisabled }		</div>
+	</div>
+</div>
+
+
+{END isDisabled_fieldblock}
+											
+{BEGIN replyDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_replyDate}  r-vertical-field" 
+	data-signal-error-for="replyDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="replyDate" data-fieldname="replyDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_replyDate}">
+		{BEGIN replyDate_label}{$label baseprocedure replyDate }{END replyDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$replyDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="replyDate" {$tooltipAttr baseprocedure replyDate } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure replyDate }		</div>
+	</div>
+</div>
+
+
+{END replyDate_fieldblock}
+											
+{BEGIN requestingIds_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_requestingIds}  r-vertical-field" 
+	data-signal-error-for="requestingIds{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="requestingIds" data-fieldname="requestingIds" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_requestingIds}">
+		{BEGIN requestingIds_label}{$label baseprocedure requestingIds }{END requestingIds_label}
+	</label>
+	<div class="r-edit-field">
+		{$requestingIds_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="requestingIds" {$tooltipAttr baseprocedure requestingIds } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure requestingIds }		</div>
+	</div>
+</div>
+
+
+{END requestingIds_fieldblock}
+											
+{BEGIN documentId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documentId}  r-vertical-field" 
+	data-signal-error-for="documentId{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="documentId" data-fieldname="documentId" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_documentId}">
+		{BEGIN documentId_label}{$label baseprocedure documentId }{END documentId_label}
+	</label>
+	<div class="r-edit-field">
+		{$documentId_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="documentId" {$tooltipAttr baseprocedure documentId } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure documentId }		</div>
+	</div>
+</div>
+
+
+{END documentId_fieldblock}
+											
+{BEGIN respondeDocumentId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_respondeDocumentId}  r-vertical-field" 
+	data-signal-error-for="respondeDocumentId{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="respondeDocumentId" data-fieldname="respondeDocumentId" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_respondeDocumentId}">
+		{BEGIN respondeDocumentId_label}{$label baseprocedure respondeDocumentId }{END respondeDocumentId_label}
+	</label>
+	<div class="r-edit-field">
+		{$respondeDocumentId_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="respondeDocumentId" {$tooltipAttr baseprocedure respondeDocumentId } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure respondeDocumentId }		</div>
+	</div>
+</div>
+
+
+{END respondeDocumentId_fieldblock}
+											
+{BEGIN trackingIds_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_trackingIds}  r-vertical-field" 
+	data-signal-error-for="trackingIds{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="trackingIds" data-fieldname="trackingIds" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_trackingIds}">
+		{BEGIN trackingIds_label}{$label baseprocedure trackingIds }{END trackingIds_label}
+	</label>
+	<div class="r-edit-field">
+		{$trackingIds_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="trackingIds" {$tooltipAttr baseprocedure trackingIds } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure trackingIds }		</div>
+	</div>
+</div>
+
+
+{END trackingIds_fieldblock}
+											
+{BEGIN responseId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_responseId}  r-vertical-field" 
+	data-signal-error-for="responseId{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="responseId" data-fieldname="responseId" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_responseId}">
+		{BEGIN responseId_label}{$label baseprocedure responseId }{END responseId_label}
+	</label>
+	<div class="r-edit-field">
+		{$responseId_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="responseId" {$tooltipAttr baseprocedure responseId } >
+		<div class="text-muted" >
+		{$tooltip baseprocedure responseId }		</div>
+	</div>
+</div>
+
+
+{END responseId_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancelar			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="baseprocedure_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

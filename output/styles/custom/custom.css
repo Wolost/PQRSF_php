@@ -1,0 +1,67 @@
+/* body background */
+
+body {
+background: #1a2035 !important;
+    
+}
+
+/* left sidebar background */
+
+.r-left:before {
+    content: ' ';
+    background-image: url(../../images/sidebar-2.jpg);
+    background-position: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:  98%;
+    width:  100%;
+}
+
+#mCSB_1 {
+    
+    opacity: 0.95;
+height: 100%;    
+    background: #1f283e;
+}
+
+/*  grids  
+    make sure to replace grid IDs here with your own*/
+
+#dashelement_type_grid1 .panel-heading,
+#dashelement_procedureid_grid1 .panel-heading {
+    padding: 17px; 
+}
+
+#dashelement_type_grid1 td,
+#dashelement_procedureid_grid1 td {
+    border-top-width: 1px; 
+    border-color: hsla(0,0%,71%,.1);
+    padding: 9px;
+}
+
+/* code snippets */
+
+.snip_title {
+color: #8b92a9;
+    text-align: right;
+    font-family: 'Roboto';
+    font-size: 14px;
+}    
+    
+.snip_body {
+color: #606477;
+    text-align: right;
+    font-family: 'Roboto';
+    font-size: 25px;
+}    
+
+.snip_link {
+color: #a9afbbd1;;
+    text-align: right;
+    font-family: 'Roboto';
+    font-size: 12px;
+    padding-top: 20px;
+}      
+    
+
